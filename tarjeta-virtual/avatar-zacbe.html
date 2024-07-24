@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta virtual</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="./images/icon-aglaya.svg">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow:hidden;
+    }
+    .no-scroll {
+      overflow: hidden;
+    }
+    @media (min-width: 1440px) { /* xl2 */
+      .xl2\:scroll {
+        overflow: auto;
+      }
+    }
+  </style>
+</head>
+<body class="bg-custom-background min-h-full font-poppins text-white-font overflow-hidden bg-cover bg-center no-scroll xl2:scroll">
+  <div class="m-10 flex justify-end cursor-pointer xl2:justify-start hover:scale-105 transition-transform duration-300 xs:w-1/4 xl2:w-1/4">
+    <img src="./images/AGLAYA 1.svg" alt="" class="md:hidden xl2:block xl2:w-[288px] xl2:h-[102px]">
+  </div>
+  <!-- Contenedor y estilos para la imagen avatar -->
+  <div class="relative flex justify-center mt-[-2rem]">
+    <!-- Contenedor de la imagen de colores -->
+    <div class="absolute top-8 left-10 mt-20 md:left-4 md:mt-[120px] md:top-[120px] xl2:mt-[440px] xl2:ml-10"><!--Posicionamiento para el responsive-->
+      <img class="md:w-40 md:h-40 xl2:rotate-90 xl2:h-[221px] xl2:-[62px]" src="./images/Group 469315.svg" alt=""></div><!-- Tamaño y rotacion para el responsive -->
+      <!-- Contenedor de la imagen con su fondo rojo -->
+    <div class="relative">
+      <!-- Círculo rojo detrás de la imagen -->
+      <div class="absolute top-1 left-1 inset-0 w-[192px] h-[192px] bg-red-600 rounded-full z-[-1] md:w-[288px] md:h-[286px] md:top-[41px] md:left-[6px] xl2:w-[436px] xl2:h-[436px] xl2:-left-[340px] xl2:mt-1"></div>
+      <!-- Imagen de perfil -->
+        <img class="w-[200px] h-[200px] md:w-[300px] md:h-[300px] md:mt-9 xl2:w-[455px] xl2:h-[455px] xl2:translate-x-[-350px]" src="./images/avatar-zacbe.svg" alt="">
+    </div>
+    <div class="absolute top-28 right-8 md:top-8 xl2:right-20 xl2:-top-20">
+      <img class="md:w-32 md:h-32 xl2:w-[88px] xl2:h-[178px]" src="./images/Group.svg" alt="">
+    </div>
+  </div>
+  <!-- Contenedor para el nombre -->
+  <div class="text-center mt-5 md:mt-10 xl2:-ml-[660px] xl2:mt-2">
+    <h1 class="text-[1.875em] font-bold md:text-[4.0625em] md:-mt-2 xl2:text-[3.4375em] ">Zacbe Gonzáles</h1>
+    <p class="font-normal text-[0.9375em] md:text-[2.25em] md:-mt-6">Consultoria de software</p>
+  </div>
+  <!-- Contenedor redes sociales -->
+  <div class="flex justify-center items-center md:justify-center md:w-[602px] md:h-[428px] md:mx-auto md:-mt-8 xl2:-mt-[500px] xl2:ml-[600px] xl2:w-[736px] xl2:h-[460px]">
+      <div class="font-normal mt-6 grid grid-cols-2 grid-rows-3 gap-12 md:grid md:grid-cols-1 md:grid-rows-6 md:gap-6 xl2:gap-14">
+          <a href="https://wa.me/yourwhatsappnumber" class="flex items-center cursor-pointer md:justify-between order-1 xl2:z-30 hover:-translate-y-3 transition-transform duration-300">
+            <img src="./images/whatsapp 1.svg" alt="" class="mr-2 md:w-8 md:h-8 md:mr-3 xl2:w-12 xl2:h-12 hover:scale-110 transition-transform">
+            <p class="md:text-2xl xl2:text-4xl">WhatsApp</p>
+            <img class="xs:hidden md:block md:ml-36" src="images/flecha-correcta.png" alt="">
+          </a>
+          <a href="https://www.yourwebsite.com" class="flex items-center cursor-pointer order-3 md:order-2 xl2:order-2 xl2:z-30 hover:-translate-y-3 transition-transform duration-300 ">
+              <img src="./images/globo 1.svg" alt="" class="mr-2 md:w-8 md:h-8 md:mr-3 xl2:w-12 xl2:h-12">
+              <p class="md:text-2xl xl2:text-4xl">Pagina</p>
+              <img class="xs:hidden md:block md:ml-48 xl2:ml-auto" src="./images/flecha-correcta.png" alt="">
+          </a>
+          <a href="https://www.linkedin.com/in/yourlinkedinprofile" class="flex items-center cursor-pointer order-5 md:order-3 xl2:order-3 xl2:z-30 hover:-translate-y-3 transition-transform duration-300 ">
+              <img src="./images/linkedin 1.svg" alt="" class="mr-2 md:w-8 md:h-8 md:mr-3 xl2:w-12 xl2:h-12">
+              <p class="md:text-2xl xl2:text-4xl">Linkedin</p>
+              <img class="xs:hidden md:block md:ml-44 xl2:ml-auto" src="images/flecha-correcta.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/yourinstagramprofile" class="flex items-center cursor-pointer order-2 md:order-4 xl2:order-4 xl2:z-30 hover:-translate-y-3 transition-transform duration-300 ">
+              <img src="./images/instagram 1.svg" alt="" class="mr-2 md:w-8 md:h-8 md:mr-3 xl2:w-12 xl2:h-12">
+              <p class="md:text-2xl xl2:text-4xl">Instagram</p>
+              <img class="xs:hidden md:block md:ml-40" src="images/flecha-correcta.png" alt="">
+          </a>
+          <a href="tel:yourphonenumber" class="flex items-center cursor-pointer order-4 md:order-5 xl2:order-5 xl2:z-30 hover:-translate-y-3 transition-transform duration-300 ">
+              <img src="./images/Vector.svg" alt="" class="mr-2 md:w-8 md:h-8 md:mr-3 xl2:w-12 xl2:h-12">
+              <p class="md:text-2xl xl2:text-4xl">Teléfono</p>
+              <img class="xs:hidden md:block md:ml-44 xl2:ml-auto" src="images/flecha-correcta.png" alt="">
+          </a>
+          <a href="mailto:youremail@example.com" class="flex items-center cursor-pointer order-6 md:order-6 xl2:order-6 xl2:z-30 hover:-translate-y-3 transition-transform duration-300 ">
+              <img src="./images/mail-outline.svg" alt="" class="mr-2 md:w-8 md:h-8 md:mr-3 xl2:w-12 xl2:h-12">
+              <p class="md:text-2xl xl2:text-4xl">Correo</p>
+              <img class="xs:hidden md:block md:ml-48 xl2:ml-auto" src="images/flecha-correcta.png" alt="">
+          </a>
+      </div>
+  </div>  
+</body>
+</html>

@@ -5,120 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Virtual Card</title>
-    
 </head>
-
-<!--En el body tengo un min-w-[360px] esto para que si el dispositivo es mas pequeño no se deforme, igualtambien tengo
-un min-h-screen lo utilice para que el body se adaptara a toda la pagina y utilice un flex al cual le di un flex col
-para que todos los elementos dentro se manejaran uno debajo del otro-->
-<body class="min-w-[360px] min-h-screen flex flex-col font-poppins overflow-hidden">
-
-<!-- En esta parte simplemenmte acomode los assets que van el background, solo las de la parte de arriba
-por que estas al tener un valor absoluto necesitan que un contenedor tenga el valor relativo y tome el header como ese
-valor relativo, tambien hay ciertas medidas para poder acomodar los assets utilizando porcentajes-->
-    <header class="relative flex flex-col" >
-        <div>
-
-            <!--Assets sm-->
-            <img class="absolute md:hidden" src="./images/Asset-blue-top.svg" alt="">
-            <img class="absolute md:hidden" src="./images/Asset-green-top.svg" alt="">
-            <img class="absolute left-[70%] -top-1 md:hidden" src="./images/Assets-lines.svg" alt="">
-            <!--Assets md-->
-            
+<body>
+    <div class="relative h-full">
+        <!-- Background Images -->
+        <div class="absolute inset-0">
+            <img class="absolute top-0 left-0 z-10" src="./images/Asset-blue-top.svg" alt="">
+            <img class="absolute top-0 left-0 z-10" src="./images/Asset-green-top.svg" alt="">
+            <img class="absolute right-[15%] z-10 -top-[0.25rem]" src="./images/Assets-lines.svg" alt="">
         </div>
-        <div class="flex justify-center mt-12 p-3 lg:flex lg:justify-end">
-            <!--Logo ACM small-->
-            <img class="md:hidden lg:hidden" src="./images/ACM-logo-small.svg" alt="">
-            <!--Logo ACM medium-->
-            <img class="hidden md:block lg:hidden" src="./images/ACM-logo-medium.svg" alt="">
-        </div>
-    </header>
-
-    <!--Aqui se encuentran las clases card la de cada uno de los diferentes links, tiene un flex-wrap para
-    que si crece la pagina se acomoden uno debajo del otro, se compone cada uno de su nombre e imagen-->
-    <main class="mx-auto mt-4 relative lg:flex justify-center">
         
-        <!--Aqui utilice un grid en columna, para que la imagen, nombre de la 
-        persona y descripcion estuvieran siempre juntos, tambien estan algunas propiedades de tamaño
-        de texto, tambien incorpore un asset line, para que a la hora de crecer el asset no se mueva
-        de su lugar-->
-
-        <div class="grid grid-rows-auto justify-items-center mt-5 lg:mt-[150px] lg:mr-[150px] border-3 border-red-600 ">
-            
-            <div class="relative">
-                <!--Logo small-->
-                <img class="relative md:hidden lg:hidden" src="./images/ACM-photo-small.svg" alt="">
-                <img class="absolute -left-32 bottom-5 md:hidden" src="./images/Assets-lines.svg" alt="">
-                <!--Logo medium-->
-                <img class="relative hidden md:block md:w-[270px] md:h-[270px] lg:w-[500px] lg:h-[500px] " src="./images/ACM-photo-medium.svg" alt="">
-                <!--Logo large-->
-            </div>
-
-            <div class="p-1">
-                <p class="text-[17px]  md:text-[20px] text-center leading-tight">
-                <span class="text-[30px] font-bold text-Blue-very-Dark block md:text-[40px]">Andrea Castro</span> 
-                Consultoría fiscal y 
-                <span class="block md:inline">jurídica<span>
-            </p>
-            <div>
-                <img class="absolute -right-16 md:hidden" src="./images/Assets-lines.svg" alt="">
-                <img class="absolute hidden md:block -right-[30px]" src="./images/Asset-lines-md-lg.svg" alt="">
-            </div>
-            </div>
+        <!-- Logo Section -->
+        <div class="flex justify-center">
+            <img class="mt-[3.5rem] z-10" src="./images/ACM-logo-small.svg" alt="">
         </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-1 justify-items-center gap-0">
+        
+        <!-- Info Section -->
+        <div class="flex flex-col items-center mt-[2.25rem] relative">
+            <img class="absolute -left-[0.5rem] top-[55%]" src="./images/Assets-lines.svg" alt="">
+            <img src="./images/ACM-photo-small.svg" alt="">
+            <p class="text-[1.0625rem] font-bold font-poppins_500 text-center leading-tight">
+                <span class="text-[1.875rem] font-bold text-Blue-very-Dark block font-poppins_700">Andrea Castro</span>
+                Consultoría fiscal y
+                <span class="block">jurídica</span>
+            </p>
+        </div>
+        
+        <!-- Cards Section -->
+        <div class="border-2 border-green-600 flex flex-wrap justify-center relative mt-4 h-full">
             <!--Card WhatsApp-->
-            <a href="https://wa.me/529983698383" target="_blank" class="card">
-                <img class="md:w-[30px] md:h-[46px] md:ml-1" src="./images/Whatsapp-logo.svg" alt="">
-                <p class="md:text-[20px] ml-1">WhatsApp</p>
-                <img class="absolute hidden md:block w-[20px] right-[20px]" src="./images/Asset-Arrow.svg" alt="">
+            <a href="https://wa.me/529983698383" target="_blank" class="card relative z-10">
+                <img src="./images/Whatsapp-logo.svg" alt="">
+                <p>WhatsApp</p>
             </a>
-
-            <!--Card Pagina-->
-            <a href="https://consultoriacancun.com.mx/" target="_blank" class="card">
-                <img class="md:w-[30px] md:h-[46px] md:ml-1" src="./images/Web-logo.svg" alt="">
-                <p class="md:text-[20px] ml-1">Pagina</p>
-                <img class="absolute hidden md:block w-[20px] right-[20px]" src="./images/Asset-Arrow.svg" alt="">
-            </a>
-
-            <!--Card LinkedIn-->
-            <a href="https://www.linkedin.com/in/andrea-castro-martinez/" target="_blank" class="card">
-                <img class="md:w-[30px] md:h-[46px] md:ml-1" src="./images/LinkedIn-logo.svg" alt="">
-                <p class="md:text-[20px] ml-1">LinkedIn</p>
-                <img class="absolute hidden md:block w-[20px] right-[20px]" src="./images/Asset-Arrow.svg" alt="">
-            </a>
-
+            
             <!--Card Instagram-->
-            <a href="https://www.instagram.com/andreacastromrtz/" target="_blank" class="card">
-                <img class="md:w-[30px] md:h-[46px] md:ml-1" src="./images/Instagram-logo.svg" alt="">
-                <p class="md:text-[20px] ml-1">Instagram</p>
-                <img class="absolute hidden md:block w-[20px] right-[20px]" src="./images/Asset-Arrow.svg" alt="">
+            <a href="https://www.instagram.com/andreacastromrtz/" target="_blank" class="card relative z-10">
+                <img src="./images/Instagram-logo.svg" alt="">
+                <p>Instagram</p>
             </a>
-
+            
+            <!--Card Web-->
+            <a href="https://consultoriacancun.com.mx/" target="_blank" class="card relative z-10">
+                <img src="./images/Web-logo.svg" alt="">
+                <p>Pagina</p>
+            </a>
+            
             <!--Card Telefono-->
-            <a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwii6uaBlbqHAxUvMtAFHaDEAbIQPAgI" target="_blank" class="card">
-                <img class="md:w-[30px] md:h-[46px] md:ml-1" src="./images/Phone-logo.svg" alt="">
-                <p class="md:text-[20px] ml-1">Teléfono</p>
-                <img class="absolute hidden md:block w-[20px] right-[20px]" src="./images/Asset-Arrow.svg" alt="">
+            <a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwii6uaBlbqHAxUvMtAFHaDEAbIQPAgI" target="_blank" class="card relative z-10">
+                <img src="./images/Phone-logo.svg" alt="">
+                <p>Teléfono</p>
             </a>
-
+            
+            <!--Card LinkedIn-->
+            <a href="https://www.linkedin.com/in/andrea-castro-martinez/" target="_blank" class="card relative z-10">
+                <img src="./images/LinkedIn-logo.svg" alt="">
+                <p>LinkedIn</p>
+            </a>
+            
             <!--Card Correo-->
-            <a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwii6uaBlbqHAxUvMtAFHaDEAbIQPAgI" target="_blank" class="card">
-                <img class="md:w-[30px] md:h-[46px] md:ml-1" src="./images/Email.logo.svg" alt="">
-                <p class="md:text-[20px] ml-1">Correo</p>
-                <img class="absolute hidden md:block w-[20px] right-[20px]" src="./images/Asset-Arrow.svg" alt="">
+            <a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwii6uaBlbqHAxUvMtAFHaDEAbIQPAgI" target="_blank" class="card relative z-10">
+                <img src="./images/Email.logo.svg" alt="">
+                <p>Correo</p>
             </a>
-        </div>  
-    </main>
-    
-    <!-- En esta parte tengo los assets de la parte de abajo, esto por que necesitaba que el contenedor
-    relativo estuviera en ese lugar para que las imagenes quedaran siempre abajo, y se acomodan atravez de
-    port-->
-    <footer class="relative flex flex-grow border-3 border-red-600">
-        <img class="absolute bottom-0 right-0 md:h-[270px] md:w-[275px]" src="./images/Asset-blue-bottom.svg" alt="">
-        <img class="absolute bottom-0 right-0 md:h-[270px] md:w-[275px] md:-right-[30px]" src="./images/Asset-green-bottom.svg" alt="">
-        <img class="absolute -bottom-1 left-[29%]" src="./images/Assets-lines.svg" alt="">
-    </footer>
+            
+            <!-- Background Image -->
+            <img class="absolute right-0 bottom-0 z-0" src="./images/Asset-blue-bottom.svg" alt="">
+        </div>
+    </div>
 </body>
 </html>

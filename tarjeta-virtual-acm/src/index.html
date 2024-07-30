@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Virtual Card</title>
 </head>
-<body>
-    <div class="relative h-full">
-        <!-- Background Images -->
-        <div class="absolute inset-0">
-            <img class="absolute top-0 left-0 z-10" src="./images/Asset-blue-top.svg" alt="">
-            <img class="absolute top-0 left-0 z-10" src="./images/Asset-green-top.svg" alt="">
-            <img class="absolute right-[15%] z-10 -top-[0.25rem]" src="./images/Assets-lines.svg" alt="">
+<body class="h-screen">
+
+    <div class="grid lg:grid-cols-2 relative h-full">
+
+        <div class="lg:hidden">
+            <img class=" mx-auto" src="./images/ACM-logo-small.svg" alt="">
         </div>
-        
-        <!-- Logo Section -->
-        <div class="flex justify-center">
-            <img class="mt-[3.5rem] z-10" src="./images/ACM-logo-small.svg" alt="">
+        <div class="flex  flex-col items-center mt-[2.25rem]">
+            <div>
+                <img class="absolute top-0 left-0 z-10" src="./images/Asset-blue-top.svg" alt="">
+                <img class="absolute top-0 left-0 z-10" src="./images/Asset-green-top.svg" alt="">
+                <img class="absolute right-[15%] z-10 -top-[0.25rem]" src="./images/Assets-lines.svg" alt="">
+                <img class=" left-[0.5rem] top-[55%]" src="./images/Assets-lines.svg" alt="">
+                <img src="./images/ACM-photo-small.svg" alt="">
+            </div>
+
+<div>
+    <p class="text-[1.875rem] lg:text-6xl text-Blue-very-Dark block font-poppins_700 font-bold font-poppins_500 text-center leading-tight">
+       Andrea Castro
+    </p>
+    <p class="text-[1.0625rem] font-bold  ">Consultoría fiscal y jurídica</p>
+</div>
+
         </div>
-        
-        <!-- Info Section -->
-        <div class="flex flex-col items-center mt-[2.25rem] relative">
-            <img class="absolute -left-[0.5rem] top-[55%]" src="./images/Assets-lines.svg" alt="">
-            <img src="./images/ACM-photo-small.svg" alt="">
-            <p class="text-[1.0625rem] font-bold font-poppins_500 text-center leading-tight">
-                <span class="text-[1.875rem] font-bold text-Blue-very-Dark block font-poppins_700">Andrea Castro</span>
-                Consultoría fiscal y
-                <span class="block">jurídica</span>
-            </p>
-        </div>
-        
-        <!-- Cards Section -->
-        <div class="border-2 border-green-600 flex flex-wrap justify-center relative mt-4 h-full">
+
+        <div class="border-2 border-green-600 flex flex-wrap justify-center  ">
+            <div class="hidden lg:block">
+                <img class=" mx-auto" src="./images/ACM-logo-small.svg" alt="">
+            </div>
             <!--Card WhatsApp-->
-            <a href="https://wa.me/529983698383" target="_blank" class="card relative z-10">
+            <a href="https://wa.me/529983698383" target="_blank" class="card ">
                 <img src="./images/Whatsapp-logo.svg" alt="">
                 <p>WhatsApp</p>
             </a>
@@ -68,9 +71,9 @@
                 <img src="./images/Email.logo.svg" alt="">
                 <p>Correo</p>
             </a>
-            
-            <!-- Background Image -->
+
             <img class="absolute right-0 bottom-0 z-0" src="./images/Asset-blue-bottom.svg" alt="">
+
         </div>
     </div>
 </body>

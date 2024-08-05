@@ -5,13 +5,23 @@
 
 @layer components {
     .card {
-        @apply bg-Blue-dark flex items-center justify-start place-content-center rounded-full
-        text-white m-2 w-[7.1875rem] h-[2.25rem] text-[0.75rem] px-2 gap-1 cursor-pointer;  
+        @apply bg-Blue-dark flex items-center justify-start place-content-center rounded-full 
+        text-white m-2 w-[7.1875rem] h-[2.25rem] text-[0.75rem] px-2 gap-1 cursor-pointer  
+        md:bg-Blue-dark-medium md:w-[26.25rem] md:h-[3.75rem] md:px-[0.75rem] md:text-[1.25rem] md:gap-[0.5rem]
+        lg:w-[33.75rem] lg:h-[5.625rem] lg:text-[2.3125rem] lg:px-[1.5rem] lg:gap-[0.75rem] shadow-md md:shadow-2xl
+        transition-transform duration-300 hover:translate-y-1 hover:shadow-lg hover:ring-white;
     }
 }
 
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'poppins_500';
     src: url('./assets/fonts/Poppins-Medium.ttf');
 }
+
+@font-face {
+    font-family: 'poppins_700';
+    src: url('./images/fonts/Poppins-ExtraBold.woff2');
+}
+
+

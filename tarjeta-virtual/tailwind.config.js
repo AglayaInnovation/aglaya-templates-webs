@@ -5,7 +5,7 @@ module.exports = {
     "./avatar-jesus.html",
     "./avatar-rodrigo.html",
     "./avatar-zacbe.html",
-    "./src/*/.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {

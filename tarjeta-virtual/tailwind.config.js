@@ -5,10 +5,17 @@ module.exports = {
     "./avatar-jesus.html",
     "./avatar-rodrigo.html",
     "./avatar-zacbe.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/*/.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      scale: {
+        '40': '0.45',
+      },
+      flex: {
+        '1-1-20': '1 1 20%',
+        '1-1-60': '1 1 60%',
+      },
       screens: {
         'xs': '375px', // Breakpoint para 375px
         'xl2': '1440px',  // Breakpoint para 1440px
@@ -19,8 +26,7 @@ module.exports = {
         'white-font':'hsla(0, 0%, 100%, 1)',
       },
       backgroundImage: {
-        // 'custom-gradient': 'linear-gradient(to bottom, hsla(0, 0%, 12%, 1), hsla(0, 0%, 0%, 1))',
-        'custom-background': "url('./images/bg-mobile.png')",
+        'custom-gradient': 'linear-gradient(to bottom, hsla(0, 0%, 12%, 1), hsla(0, 0%, 0%, 1))'
       },
       inset: {
         '22': '5.5rem', // Valor personalizado para top, right, bottom, left
@@ -30,5 +36,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.right-minus-60': {
+          right: '-60px',
+        },
+      };
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
+};

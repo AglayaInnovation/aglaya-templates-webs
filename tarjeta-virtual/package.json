@@ -1,0 +1,10 @@
+{
+  "name": "tarjeta-virtual",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}

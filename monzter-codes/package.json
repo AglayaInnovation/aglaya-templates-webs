@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/css/main.css -o ./src/dist/css/main.css --watch"
+    "build": "npx tailwindcss -i ./src/css/*.css -o ./src/dist/css/*.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

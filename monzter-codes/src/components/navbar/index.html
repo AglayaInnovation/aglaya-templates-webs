@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONSTER_CODES</title>
+    <link rel="icon" href="../../assets/images/cabeza.png" type="image/png">
+    <link href="../../dist/css/main.css" rel="stylesheet">
+    <script src="./scripts.js"></script>
+</head>
+<body class="m-0">
+<div class="bg-custom-pattern h-screen w-full md:pt-6">
+    <header class="md:mt-6 flex flex-col md:flex-row justify-center items-center pb-5 backdrop-blur-2xl backdrop-saturate-180 pt-5 md:w-[95%] md:h-auto md:rounded-full md:border md:border-custom-blue md:mx-auto">
+        <div class="flex items-center w-full md:w-auto md:flex-col lg:flex-row ml-5">
+            <img class="xs:h-10 lg:h-10 md:h-7 object-contain ml-3 md:mb-1 lg:mb-0" src="../../assets/images/cabeza.png" alt="">
+            <div>
+                <p class="text-white hover:text-custom-blue font-Cousine ml-3 md:ml-0 lg:ml-3 md:leading-tight">MONSTER_CODES</p>
+                <p class="text-xxs text-white hover:text-custom-blue font-Cousine text-center md:leading-tight">EDUCATION & TECHNOLOGY</p>
+            </div>
+            <img class="cursor-pointer md:hidden ml-auto mr-5" onclick="toggleMenu()" src="../../assets/images/menu.png" alt="">
+        </div>
+        <nav class="hidden w-full md:flex md:ml-auto md:w-auto md:static md:opacity-100">
+            <ul class="text-white font-Inter flex flex-col md:flex-row md:space-x-2 lg:space-x-8 md:ml-6">
+                    <li class="hover:text-custom-blue xs:p-2 xs:ml-4 xs:mt-3 cursor-pointer" onclick="showContent('inicio')">Inicio</li>
+                    <li class="hover:text-custom-blue xs:p-2 xs:ml-4 xs:mt-3 cursor-pointer" onclick="showContent('sobre-mi')">Sobre mí</li>
+                    <li class="hover:text-custom-blue xs:p-2 xs:ml-4 xs:mt-3 cursor-pointer" onclick="showContent('habilidades')">Habilidades</li>
+                    <li class="hover:text-custom-blue xs:p-2 xs:ml-4 xs:mt-3 cursor-pointer" onclick="showContent('experiencia')">Experiencia</li>
+                    <li class="hover:text-custom-blue xs:p-2 xs:ml-4 xs:mt-3 cursor-pointer" onclick="showContent('blog')">Blog</li>
+                    <li class="hover:text-custom-blue xs:p-2 xs:ml-4 xs:mt-3 cursor-pointer" onclick="showContent('proyectos')">Proyectos</li>
+                </ul>
+        </nav>
+    </header>
+</div>
+</body>
+</html>

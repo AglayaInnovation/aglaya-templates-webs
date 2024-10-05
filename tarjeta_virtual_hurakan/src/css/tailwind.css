@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Sacramento';
+    src: url('../src/sacramento/Sacramento.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/poppins/Poppins-Medium.ttf') format('truetype'); /* Ruta hacia el archivo de Poppins */
+    font-weight: bold;
+    font-style: normal;
+}
+
+

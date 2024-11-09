@@ -1,0 +1,46 @@
+Arguments: 
+  /Users/monstercodes/.nvm/versions/node/v20.10.0/bin/node /Users/monstercodes/.yarn/releases/yarn-1.22.1.cjs add @aglayainnovation/cli-tools
+
+PATH: 
+  /Users/monstercodes/.rvm/gems/ruby-3.0.0/bin:/Users/monstercodes/.rvm/gems/ruby-3.0.0@global/bin:/Users/monstercodes/.rvm/rubies/ruby-3.0.0/bin:/Users/monstercodes/.console-ninja/.bin:/opt/homebrew/opt/postgresql@16/bin:/opt/homebrew/opt/libpq/bin:/opt/homebrew/opt/libpq/bin:/Users/monstercodes/.yarn/bin:/Users/monstercodes/.config/yarn/global/node_modules/.bin:~/Library/Android/sdk/platform-tools:/Users/monstercodes/.bin:/Users/monstercodes/.nvm/versions/node/v20.10.0/bin:/opt/homebrew/opt/mysql@5.7/bin:/opt/homebrew/opt/mysql@5.7/bin:/opt/homebrew/opt/mysql@5.7/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/monstercodes/.rvm/bin:/Users/monstercodes/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.1
+
+Node version: 
+  20.10.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.npmjs.org/@aglayainnovation%2fcli-tools: Not found
+      at params.callback [as _callback] (/Users/monstercodes/.yarn/releases/yarn-1.22.1.cjs:78512:18)
+      at self.callback (/Users/monstercodes/.yarn/releases/yarn-1.22.1.cjs:135154:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (/Users/monstercodes/.yarn/releases/yarn-1.22.1.cjs:136126:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (/Users/monstercodes/.yarn/releases/yarn-1.22.1.cjs:136048:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1589:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "aglaya-templates-webs",
+    "version": "1.0.0",
+    "description": "## Description Contains the templates for the web pages of the AGLAYA project.",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

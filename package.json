@@ -1,0 +1,15 @@
+{
+  "name": "aglaya-templates-webs",
+  "version": "1.0.0",
+  "description": "## Description Contains the templates for the web pages of the AGLAYA project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create:template": "aglaya-cli create"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aglaya/cli-tools": "^0.2.0"
+  }
+}
